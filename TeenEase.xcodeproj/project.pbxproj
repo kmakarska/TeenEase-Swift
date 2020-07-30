@@ -1,0 +1,809 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		027648E124AFCFEF006D7DE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027648E024AFCFEF006D7DE0 /* AppDelegate.swift */; };
+		027648E324AFCFEF006D7DE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027648E224AFCFEF006D7DE0 /* SceneDelegate.swift */; };
+		027648E524AFCFEF006D7DE0 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027648E424AFCFEF006D7DE0 /* IntroViewController.swift */; };
+		027648EA24AFCFEF006D7DE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 027648E824AFCFEF006D7DE0 /* Main.storyboard */; };
+		027648EC24AFCFEF006D7DE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 027648EB24AFCFEF006D7DE0 /* Assets.xcassets */; };
+		027648EF24AFCFEF006D7DE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 027648ED24AFCFEF006D7DE0 /* LaunchScreen.storyboard */; };
+		027648FA24AFCFEF006D7DE0 /* TeenEaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027648F924AFCFEF006D7DE0 /* TeenEaseTests.swift */; };
+		0276490524AFCFEF006D7DE0 /* TeenEaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0276490424AFCFEF006D7DE0 /* TeenEaseUITests.swift */; };
+		0276491324BBA212006D7DE0 /* FlowerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0276491224BBA212006D7DE0 /* FlowerViewController.swift */; };
+		0276491524BBAB87006D7DE0 /* testflower.json in Resources */ = {isa = PBXBuildFile; fileRef = 0276491424BBAB87006D7DE0 /* testflower.json */; };
+		0276493724CB4798006D7DE0 /* realflower.json in Resources */ = {isa = PBXBuildFile; fileRef = 0276493624CB4798006D7DE0 /* realflower.json */; };
+		0276493D24CB4814006D7DE0 /* color.json in Resources */ = {isa = PBXBuildFile; fileRef = 0276493C24CB4814006D7DE0 /* color.json */; };
+		0276493F24CB4825006D7DE0 /* cloud.json in Resources */ = {isa = PBXBuildFile; fileRef = 0276493E24CB4825006D7DE0 /* cloud.json */; };
+		0276494124CB7CC0006D7DE0 /* HexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0276494024CB7CC0006D7DE0 /* HexViewController.swift */; };
+		0276494324CBA0EF006D7DE0 /* hex.json in Resources */ = {isa = PBXBuildFile; fileRef = 0276494224CBA0EF006D7DE0 /* hex.json */; };
+		0276494524CBA188006D7DE0 /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0276494424CBA188006D7DE0 /* ColorViewController.swift */; };
+		0276494724CBA3E4006D7DE0 /* WaterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0276494624CBA3E4006D7DE0 /* WaterViewController.swift */; };
+		0276494924CC927E006D7DE0 /* lf30_editor_Fe0O9U.json in Resources */ = {isa = PBXBuildFile; fileRef = 0276494824CC927E006D7DE0 /* lf30_editor_Fe0O9U.json */; };
+		02873C3B24CC96FA00A59797 /* water2.json in Resources */ = {isa = PBXBuildFile; fileRef = 02873C3A24CC96FA00A59797 /* water2.json */; };
+		02873C4924CDEA6400A59797 /* newhomeicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 02873C4824CDEA6400A59797 /* newhomeicon.png */; };
+		02873C5124CE324C00A59797 /* SSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02873C5024CE324C00A59797 /* SSViewController.swift */; };
+		02873C5324CF03BB00A59797 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 02873C5224CF03BB00A59797 /* fonts */; };
+		02873C9124CFAA1E00A59797 /* NewFlowerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02873C9024CFAA1E00A59797 /* NewFlowerViewController.swift */; };
+		694039585A65B38FCCB63C14 /* Pods_TeenEase_TeenEaseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E9F6A20AA49CF0F06D501DB /* Pods_TeenEase_TeenEaseUITests.framework */; };
+		B39A3DB9F6F10B13170F4B3C /* Pods_TeenEaseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7B5FA480256FDFF991F877B /* Pods_TeenEaseTests.framework */; };
+		B990883F08510E90636E4777 /* Pods_TeenEase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D6257036DB74AF8651A7185 /* Pods_TeenEase.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		027648F624AFCFEF006D7DE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 027648D524AFCFEE006D7DE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 027648DC24AFCFEE006D7DE0;
+			remoteInfo = TeenEase;
+		};
+		0276490124AFCFEF006D7DE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 027648D524AFCFEE006D7DE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 027648DC24AFCFEE006D7DE0;
+			remoteInfo = TeenEase;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		027648DD24AFCFEE006D7DE0 /* TeenEase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeenEase.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		027648E024AFCFEF006D7DE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		027648E224AFCFEF006D7DE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		027648E424AFCFEF006D7DE0 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		027648E924AFCFEF006D7DE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		027648EB24AFCFEF006D7DE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		027648EE24AFCFEF006D7DE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		027648F024AFCFEF006D7DE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		027648F524AFCFEF006D7DE0 /* TeenEaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeenEaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		027648F924AFCFEF006D7DE0 /* TeenEaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeenEaseTests.swift; sourceTree = "<group>"; };
+		027648FB24AFCFEF006D7DE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0276490024AFCFEF006D7DE0 /* TeenEaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeenEaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0276490424AFCFEF006D7DE0 /* TeenEaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeenEaseUITests.swift; sourceTree = "<group>"; };
+		0276490624AFCFEF006D7DE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0276491224BBA212006D7DE0 /* FlowerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowerViewController.swift; sourceTree = "<group>"; };
+		0276491424BBAB87006D7DE0 /* testflower.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testflower.json; sourceTree = "<group>"; };
+		0276493624CB4798006D7DE0 /* realflower.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = realflower.json; sourceTree = "<group>"; };
+		0276493C24CB4814006D7DE0 /* color.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = color.json; sourceTree = "<group>"; };
+		0276493E24CB4825006D7DE0 /* cloud.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cloud.json; sourceTree = "<group>"; };
+		0276494024CB7CC0006D7DE0 /* HexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexViewController.swift; sourceTree = "<group>"; };
+		0276494224CBA0EF006D7DE0 /* hex.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hex.json; sourceTree = "<group>"; };
+		0276494424CBA188006D7DE0 /* ColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
+		0276494624CBA3E4006D7DE0 /* WaterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterViewController.swift; sourceTree = "<group>"; };
+		0276494824CC927E006D7DE0 /* lf30_editor_Fe0O9U.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lf30_editor_Fe0O9U.json; sourceTree = "<group>"; };
+		02873C3A24CC96FA00A59797 /* water2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = water2.json; sourceTree = "<group>"; };
+		02873C4824CDEA6400A59797 /* newhomeicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newhomeicon.png; sourceTree = "<group>"; };
+		02873C5024CE324C00A59797 /* SSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSViewController.swift; sourceTree = "<group>"; };
+		02873C5224CF03BB00A59797 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
+		02873C9024CFAA1E00A59797 /* NewFlowerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFlowerViewController.swift; sourceTree = "<group>"; };
+		2E9F6A20AA49CF0F06D501DB /* Pods_TeenEase_TeenEaseUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeenEase_TeenEaseUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48221A145C7E58C41E30D163 /* Pods-TeenEase-TeenEaseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeenEase-TeenEaseUITests.release.xcconfig"; path = "Target Support Files/Pods-TeenEase-TeenEaseUITests/Pods-TeenEase-TeenEaseUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4D6257036DB74AF8651A7185 /* Pods_TeenEase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeenEase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F0C7436D0722B91CD6B3E93 /* Pods-TeenEaseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeenEaseTests.release.xcconfig"; path = "Target Support Files/Pods-TeenEaseTests/Pods-TeenEaseTests.release.xcconfig"; sourceTree = "<group>"; };
+		6DFFC849AFBF6BCBE2C0E640 /* Pods-TeenEase-TeenEaseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeenEase-TeenEaseUITests.debug.xcconfig"; path = "Target Support Files/Pods-TeenEase-TeenEaseUITests/Pods-TeenEase-TeenEaseUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A5C7588727F793211FB5E2A9 /* Pods-TeenEaseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeenEaseTests.debug.xcconfig"; path = "Target Support Files/Pods-TeenEaseTests/Pods-TeenEaseTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C9BFEF9BA05CCAA8EC256F7D /* Pods-TeenEase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeenEase.debug.xcconfig"; path = "Target Support Files/Pods-TeenEase/Pods-TeenEase.debug.xcconfig"; sourceTree = "<group>"; };
+		CC8AC2749DD7C4CE8B491561 /* Pods-TeenEase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeenEase.release.xcconfig"; path = "Target Support Files/Pods-TeenEase/Pods-TeenEase.release.xcconfig"; sourceTree = "<group>"; };
+		D7B5FA480256FDFF991F877B /* Pods_TeenEaseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeenEaseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		027648DA24AFCFEE006D7DE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B990883F08510E90636E4777 /* Pods_TeenEase.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		027648F224AFCFEF006D7DE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B39A3DB9F6F10B13170F4B3C /* Pods_TeenEaseTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		027648FD24AFCFEF006D7DE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				694039585A65B38FCCB63C14 /* Pods_TeenEase_TeenEaseUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		027648D424AFCFEE006D7DE0 = {
+			isa = PBXGroup;
+			children = (
+				027648DF24AFCFEE006D7DE0 /* TeenEase */,
+				027648F824AFCFEF006D7DE0 /* TeenEaseTests */,
+				0276490324AFCFEF006D7DE0 /* TeenEaseUITests */,
+				027648DE24AFCFEE006D7DE0 /* Products */,
+				723C670741365156F3F49E51 /* Pods */,
+				15EE792F69CCB4FC6151C2BA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		027648DE24AFCFEE006D7DE0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				027648DD24AFCFEE006D7DE0 /* TeenEase.app */,
+				027648F524AFCFEF006D7DE0 /* TeenEaseTests.xctest */,
+				0276490024AFCFEF006D7DE0 /* TeenEaseUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		027648DF24AFCFEE006D7DE0 /* TeenEase */ = {
+			isa = PBXGroup;
+			children = (
+				02873C5224CF03BB00A59797 /* fonts */,
+				02873C4824CDEA6400A59797 /* newhomeicon.png */,
+				02873C3A24CC96FA00A59797 /* water2.json */,
+				0276494824CC927E006D7DE0 /* lf30_editor_Fe0O9U.json */,
+				0276493E24CB4825006D7DE0 /* cloud.json */,
+				0276493C24CB4814006D7DE0 /* color.json */,
+				0276494224CBA0EF006D7DE0 /* hex.json */,
+				0276493624CB4798006D7DE0 /* realflower.json */,
+				0276491424BBAB87006D7DE0 /* testflower.json */,
+				0276494624CBA3E4006D7DE0 /* WaterViewController.swift */,
+				027648E024AFCFEF006D7DE0 /* AppDelegate.swift */,
+				027648E224AFCFEF006D7DE0 /* SceneDelegate.swift */,
+				027648E424AFCFEF006D7DE0 /* IntroViewController.swift */,
+				02873C5024CE324C00A59797 /* SSViewController.swift */,
+				0276494424CBA188006D7DE0 /* ColorViewController.swift */,
+				0276491224BBA212006D7DE0 /* FlowerViewController.swift */,
+				02873C9024CFAA1E00A59797 /* NewFlowerViewController.swift */,
+				0276494024CB7CC0006D7DE0 /* HexViewController.swift */,
+				027648E824AFCFEF006D7DE0 /* Main.storyboard */,
+				027648EB24AFCFEF006D7DE0 /* Assets.xcassets */,
+				027648ED24AFCFEF006D7DE0 /* LaunchScreen.storyboard */,
+				027648F024AFCFEF006D7DE0 /* Info.plist */,
+			);
+			path = TeenEase;
+			sourceTree = "<group>";
+		};
+		027648F824AFCFEF006D7DE0 /* TeenEaseTests */ = {
+			isa = PBXGroup;
+			children = (
+				027648F924AFCFEF006D7DE0 /* TeenEaseTests.swift */,
+				027648FB24AFCFEF006D7DE0 /* Info.plist */,
+			);
+			path = TeenEaseTests;
+			sourceTree = "<group>";
+		};
+		0276490324AFCFEF006D7DE0 /* TeenEaseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0276490424AFCFEF006D7DE0 /* TeenEaseUITests.swift */,
+				0276490624AFCFEF006D7DE0 /* Info.plist */,
+			);
+			path = TeenEaseUITests;
+			sourceTree = "<group>";
+		};
+		15EE792F69CCB4FC6151C2BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D6257036DB74AF8651A7185 /* Pods_TeenEase.framework */,
+				2E9F6A20AA49CF0F06D501DB /* Pods_TeenEase_TeenEaseUITests.framework */,
+				D7B5FA480256FDFF991F877B /* Pods_TeenEaseTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		723C670741365156F3F49E51 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C9BFEF9BA05CCAA8EC256F7D /* Pods-TeenEase.debug.xcconfig */,
+				CC8AC2749DD7C4CE8B491561 /* Pods-TeenEase.release.xcconfig */,
+				6DFFC849AFBF6BCBE2C0E640 /* Pods-TeenEase-TeenEaseUITests.debug.xcconfig */,
+				48221A145C7E58C41E30D163 /* Pods-TeenEase-TeenEaseUITests.release.xcconfig */,
+				A5C7588727F793211FB5E2A9 /* Pods-TeenEaseTests.debug.xcconfig */,
+				4F0C7436D0722B91CD6B3E93 /* Pods-TeenEaseTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		027648DC24AFCFEE006D7DE0 /* TeenEase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0276490924AFCFEF006D7DE0 /* Build configuration list for PBXNativeTarget "TeenEase" */;
+			buildPhases = (
+				3B78DCCD3EA43627E9989B56 /* [CP] Check Pods Manifest.lock */,
+				027648D924AFCFEE006D7DE0 /* Sources */,
+				027648DA24AFCFEE006D7DE0 /* Frameworks */,
+				027648DB24AFCFEE006D7DE0 /* Resources */,
+				E07F676DDC2585517067F9A0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TeenEase;
+			productName = TeenEase;
+			productReference = 027648DD24AFCFEE006D7DE0 /* TeenEase.app */;
+			productType = "com.apple.product-type.application";
+		};
+		027648F424AFCFEF006D7DE0 /* TeenEaseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0276490C24AFCFEF006D7DE0 /* Build configuration list for PBXNativeTarget "TeenEaseTests" */;
+			buildPhases = (
+				307F7D8688DEE30A7D4B4944 /* [CP] Check Pods Manifest.lock */,
+				027648F124AFCFEF006D7DE0 /* Sources */,
+				027648F224AFCFEF006D7DE0 /* Frameworks */,
+				027648F324AFCFEF006D7DE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				027648F724AFCFEF006D7DE0 /* PBXTargetDependency */,
+			);
+			name = TeenEaseTests;
+			productName = TeenEaseTests;
+			productReference = 027648F524AFCFEF006D7DE0 /* TeenEaseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		027648FF24AFCFEF006D7DE0 /* TeenEaseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0276490F24AFCFEF006D7DE0 /* Build configuration list for PBXNativeTarget "TeenEaseUITests" */;
+			buildPhases = (
+				87C93D986F71AEB1384E84ED /* [CP] Check Pods Manifest.lock */,
+				027648FC24AFCFEF006D7DE0 /* Sources */,
+				027648FD24AFCFEF006D7DE0 /* Frameworks */,
+				027648FE24AFCFEF006D7DE0 /* Resources */,
+				DE2AD60B2A5D5383A24DCCC2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0276490224AFCFEF006D7DE0 /* PBXTargetDependency */,
+			);
+			name = TeenEaseUITests;
+			productName = TeenEaseUITests;
+			productReference = 0276490024AFCFEF006D7DE0 /* TeenEaseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		027648D524AFCFEE006D7DE0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = TeenEaseTeam;
+				TargetAttributes = {
+					027648DC24AFCFEE006D7DE0 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					027648F424AFCFEF006D7DE0 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 027648DC24AFCFEE006D7DE0;
+					};
+					027648FF24AFCFEF006D7DE0 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 027648DC24AFCFEE006D7DE0;
+					};
+				};
+			};
+			buildConfigurationList = 027648D824AFCFEE006D7DE0 /* Build configuration list for PBXProject "TeenEase" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 027648D424AFCFEE006D7DE0;
+			productRefGroup = 027648DE24AFCFEE006D7DE0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				027648DC24AFCFEE006D7DE0 /* TeenEase */,
+				027648F424AFCFEF006D7DE0 /* TeenEaseTests */,
+				027648FF24AFCFEF006D7DE0 /* TeenEaseUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		027648DB24AFCFEE006D7DE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02873C3B24CC96FA00A59797 /* water2.json in Resources */,
+				027648EF24AFCFEF006D7DE0 /* LaunchScreen.storyboard in Resources */,
+				0276493724CB4798006D7DE0 /* realflower.json in Resources */,
+				027648EC24AFCFEF006D7DE0 /* Assets.xcassets in Resources */,
+				0276493F24CB4825006D7DE0 /* cloud.json in Resources */,
+				0276491524BBAB87006D7DE0 /* testflower.json in Resources */,
+				0276494924CC927E006D7DE0 /* lf30_editor_Fe0O9U.json in Resources */,
+				0276494324CBA0EF006D7DE0 /* hex.json in Resources */,
+				027648EA24AFCFEF006D7DE0 /* Main.storyboard in Resources */,
+				02873C5324CF03BB00A59797 /* fonts in Resources */,
+				02873C4924CDEA6400A59797 /* newhomeicon.png in Resources */,
+				0276493D24CB4814006D7DE0 /* color.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		027648F324AFCFEF006D7DE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		027648FE24AFCFEF006D7DE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		307F7D8688DEE30A7D4B4944 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TeenEaseTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B78DCCD3EA43627E9989B56 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TeenEase-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87C93D986F71AEB1384E84ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TeenEase-TeenEaseUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE2AD60B2A5D5383A24DCCC2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TeenEase-TeenEaseUITests/Pods-TeenEase-TeenEaseUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TeenEase-TeenEaseUITests/Pods-TeenEase-TeenEaseUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TeenEase-TeenEaseUITests/Pods-TeenEase-TeenEaseUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E07F676DDC2585517067F9A0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TeenEase/Pods-TeenEase-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TeenEase/Pods-TeenEase-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TeenEase/Pods-TeenEase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		027648D924AFCFEE006D7DE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0276491324BBA212006D7DE0 /* FlowerViewController.swift in Sources */,
+				0276494124CB7CC0006D7DE0 /* HexViewController.swift in Sources */,
+				027648E524AFCFEF006D7DE0 /* IntroViewController.swift in Sources */,
+				02873C9124CFAA1E00A59797 /* NewFlowerViewController.swift in Sources */,
+				027648E124AFCFEF006D7DE0 /* AppDelegate.swift in Sources */,
+				0276494524CBA188006D7DE0 /* ColorViewController.swift in Sources */,
+				0276494724CBA3E4006D7DE0 /* WaterViewController.swift in Sources */,
+				02873C5124CE324C00A59797 /* SSViewController.swift in Sources */,
+				027648E324AFCFEF006D7DE0 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		027648F124AFCFEF006D7DE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				027648FA24AFCFEF006D7DE0 /* TeenEaseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		027648FC24AFCFEF006D7DE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0276490524AFCFEF006D7DE0 /* TeenEaseUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		027648F724AFCFEF006D7DE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 027648DC24AFCFEE006D7DE0 /* TeenEase */;
+			targetProxy = 027648F624AFCFEF006D7DE0 /* PBXContainerItemProxy */;
+		};
+		0276490224AFCFEF006D7DE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 027648DC24AFCFEE006D7DE0 /* TeenEase */;
+			targetProxy = 0276490124AFCFEF006D7DE0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		027648E824AFCFEF006D7DE0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				027648E924AFCFEF006D7DE0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		027648ED24AFCFEF006D7DE0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				027648EE24AFCFEF006D7DE0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0276490724AFCFEF006D7DE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0276490824AFCFEF006D7DE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0276490A24AFCFEF006D7DE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9BFEF9BA05CCAA8EC256F7D /* Pods-TeenEase.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RVXGKFU2UT;
+				INFOPLIST_FILE = TeenEase/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.teeneaseteam.TeenEase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0276490B24AFCFEF006D7DE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC8AC2749DD7C4CE8B491561 /* Pods-TeenEase.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RVXGKFU2UT;
+				INFOPLIST_FILE = TeenEase/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.teeneaseteam.TeenEase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0276490D24AFCFEF006D7DE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5C7588727F793211FB5E2A9 /* Pods-TeenEaseTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RVXGKFU2UT;
+				INFOPLIST_FILE = TeenEaseTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.teeneaseteam.TeenEaseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TeenEase.app/TeenEase";
+			};
+			name = Debug;
+		};
+		0276490E24AFCFEF006D7DE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F0C7436D0722B91CD6B3E93 /* Pods-TeenEaseTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RVXGKFU2UT;
+				INFOPLIST_FILE = TeenEaseTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.teeneaseteam.TeenEaseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TeenEase.app/TeenEase";
+			};
+			name = Release;
+		};
+		0276491024AFCFEF006D7DE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DFFC849AFBF6BCBE2C0E640 /* Pods-TeenEase-TeenEaseUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RVXGKFU2UT;
+				INFOPLIST_FILE = TeenEaseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.teeneaseteam.TeenEaseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TeenEase;
+			};
+			name = Debug;
+		};
+		0276491124AFCFEF006D7DE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48221A145C7E58C41E30D163 /* Pods-TeenEase-TeenEaseUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RVXGKFU2UT;
+				INFOPLIST_FILE = TeenEaseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.teeneaseteam.TeenEaseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TeenEase;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		027648D824AFCFEE006D7DE0 /* Build configuration list for PBXProject "TeenEase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0276490724AFCFEF006D7DE0 /* Debug */,
+				0276490824AFCFEF006D7DE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0276490924AFCFEF006D7DE0 /* Build configuration list for PBXNativeTarget "TeenEase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0276490A24AFCFEF006D7DE0 /* Debug */,
+				0276490B24AFCFEF006D7DE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0276490C24AFCFEF006D7DE0 /* Build configuration list for PBXNativeTarget "TeenEaseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0276490D24AFCFEF006D7DE0 /* Debug */,
+				0276490E24AFCFEF006D7DE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0276490F24AFCFEF006D7DE0 /* Build configuration list for PBXNativeTarget "TeenEaseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0276491024AFCFEF006D7DE0 /* Debug */,
+				0276491124AFCFEF006D7DE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 027648D524AFCFEE006D7DE0 /* Project object */;
+}
