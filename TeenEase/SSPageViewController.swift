@@ -12,33 +12,35 @@ import AVKit
 
 class SSPageViewController: UIViewController {
     
-//   // @IBOutlet func textfield(_ sender: Any) {
-//    }
-//    override func viewDidLoad() {
-////        super.viewDidLoad()
-//        // Do any additional setup after loading the view.
-//    }
-//
+    @IBOutlet weak var textlabel: UILabel!
+    var audioPlayer: AVAudioPlayer?
+    var finalText = "Hello"
+    override func viewDidLoad() {
+       super.viewDidLoad()
+        
+        textlabel.text = finalText
+        
+        let pathToSound = Bundle.main.path(forResource: "rainsound", ofType: "mp3")!
+               let url = URL(fileURLWithPath: pathToSound)
+               do {
+                   audioPlayer = try AVAudioPlayer(contentsOf: url)
+                   audioPlayer?.numberOfLoops = -1
+                   audioPlayer?.play()
+               } catch {
+                   //error
+               }
+        // Do any additional setup after loading the view.
+    }
+
 //    override func viewDidAppear(_ animated: Bool) {
 //        super.viewDidAppear(animated)
 //
 //        let player = AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "rain", ofType: "mp4")!))
-//
 //        let layer = AVPlayerLayer(player: player)
-// //       layer.frame = view.bounds
 //        layer.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 870)
 //
 //        view.layer.addSublayer(layer)
-//        player.play()
-    }
-    /*
-    // MARK: - Navigation
+//            player.play()
+//    }
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-
+}

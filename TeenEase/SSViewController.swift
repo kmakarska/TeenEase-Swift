@@ -14,6 +14,8 @@ class SSViewController: UIViewController {
     let dropDownScenery = DropDown()
     let dropDownSounds = DropDown()
     
+    @IBOutlet weak var textfield: UITextField!
+    var ssText = ""
     @IBOutlet weak var sceneryButton: UIButton!
     
     @IBAction func sceneryAction(_ sender: Any) {
@@ -25,7 +27,18 @@ class SSViewController: UIViewController {
         dropDownSounds.show()
     }
 
-        override func viewDidLoad() {
+    @IBAction func textfieldaction(_ sender: Any) {
+        self.ssText = textfield.text!
+        performSegue(withIdentifier: "text", sender: self)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        var vc = segue.destination as! SSPageViewController
+        vc.finalText = self.ssText
+    
+    }
+
+    
+    override func viewDidLoad() {
             super.viewDidLoad()
 
             /// set the data
@@ -52,7 +65,7 @@ class SSViewController: UIViewController {
             }
 
         }
-    }
+
 
     /*
     // MARK: - Navigation
@@ -67,3 +80,4 @@ class SSViewController: UIViewController {
 
 
 
+}

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02427D2824D711EA0075E3D1 /* rainsound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 02427D2724D711EA0075E3D1 /* rainsound.mp3 */; };
 		0243A90824D4F2F8001F1A69 /* rain.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 02D2C69324D4F17C00805AEA /* rain.mp4 */; };
 		0243A90A24D631F0001F1A69 /* BasicInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0243A90924D631F0001F1A69 /* BasicInfoViewController.swift */; };
 		0243A90C24D632B8001F1A69 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0243A90B24D632B8001F1A69 /* AboutViewController.swift */; };
@@ -57,6 +58,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02427D2724D711EA0075E3D1 /* rainsound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rainsound.mp3; sourceTree = "<group>"; };
 		0243A90924D631F0001F1A69 /* BasicInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicInfoViewController.swift; sourceTree = "<group>"; };
 		0243A90B24D632B8001F1A69 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		027648DD24AFCFEE006D7DE0 /* TeenEase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeenEase.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -158,6 +160,7 @@
 				02873C5224CF03BB00A59797 /* fonts */,
 				02873C4824CDEA6400A59797 /* newhomeicon.png */,
 				02873C3A24CC96FA00A59797 /* water2.json */,
+				02427D2724D711EA0075E3D1 /* rainsound.mp3 */,
 				0276494824CC927E006D7DE0 /* lf30_editor_Fe0O9U.json */,
 				0276493E24CB4825006D7DE0 /* cloud.json */,
 				0276493C24CB4814006D7DE0 /* color.json */,
@@ -340,6 +343,7 @@
 				027648EC24AFCFEF006D7DE0 /* Assets.xcassets in Resources */,
 				0276493F24CB4825006D7DE0 /* cloud.json in Resources */,
 				0276491524BBAB87006D7DE0 /* testflower.json in Resources */,
+				02427D2824D711EA0075E3D1 /* rainsound.mp3 in Resources */,
 				0276494924CC927E006D7DE0 /* lf30_editor_Fe0O9U.json in Resources */,
 				0276494324CBA0EF006D7DE0 /* hex.json in Resources */,
 				027648EA24AFCFEF006D7DE0 /* Main.storyboard in Resources */,
