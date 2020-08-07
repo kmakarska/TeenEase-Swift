@@ -7,6 +7,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="NotoSansJP-Light.otf">
+            <string>NotoSansJP-Light</string>
+        </array>
         <array key="NotoSansJP-Medium.otf">
             <string>NotoSansJP-Medium</string>
         </array>
@@ -58,31 +61,36 @@
                                 <color key="backgroundColor" red="0.21960784310000001" green="0.20000000000000001" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Riv-SW-2XG">
-                                <rect key="frame" x="0.0" y="273" width="414" height="462"/>
+                                <rect key="frame" x="0.0" y="261" width="414" height="474"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qjo-y9-Qpc">
-                                        <rect key="frame" x="47" y="171" width="320" height="120"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" backgroundImage="WaterBgbutton"/>
-                                        <connections>
-                                            <segue destination="ETU-Fa-tfx" kind="show" id="wpe-Z7-yVb"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FUR-p2-oDk">
-                                        <rect key="frame" x="47" y="31" width="320" height="120"/>
+                                        <rect key="frame" x="47" y="31" width="320" height="90"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" backgroundImage="flowerBGbutton"/>
+                                        <state key="normal" backgroundImage="newflowerbutton"/>
                                         <connections>
                                             <segue destination="Vf1-gH-EWA" kind="show" id="KD0-WP-ANG"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lbt-1c-uOp">
-                                        <rect key="frame" x="47" y="314" width="320" height="120"/>
+                                        <rect key="frame" x="47" y="245" width="320" height="90"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" backgroundImage="hexBGbutton"/>
+                                        <state key="normal" backgroundImage="newhexbutton"/>
                                         <connections>
                                             <segue destination="q28-zm-ARu" kind="show" id="UuK-bo-1dW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ReL-Cl-EIC">
+                                        <rect key="frame" x="47" y="352" width="320" height="90"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" backgroundImage="newcloudbutton"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qjo-y9-Qpc">
+                                        <rect key="frame" x="47" y="138" width="320" height="90"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" backgroundImage="newwaterbutton"/>
+                                        <connections>
+                                            <segue destination="ETU-Fa-tfx" kind="show" id="wpe-Z7-yVb"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -147,18 +155,21 @@
                                     <segue destination="9pv-A4-QxB" kind="show" id="ooU-a1-nqo"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Breathe in" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s6A-10-ppx">
-                                <rect key="frame" x="55" y="133" width="305" height="117"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="adi-Qd-d98">
                                 <rect key="frame" x="167" y="671" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="peachpausebutton"/>
+                                <connections>
+                                    <action selector="pauseButton:" destination="Vf1-gH-EWA" eventType="touchUpInside" id="ILi-N6-a6c"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Breathe In" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s6A-10-ppx">
+                                <rect key="frame" x="55" y="123" width="305" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="NotoSansJP-Light" family="Noto Sans JP" pointSize="30"/>
+                                <color key="textColor" red="0.1025752798" green="0.0086635854100000007" blue="0.23974809050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.99607843137254903" green="0.9882352941176471" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="MQr-WG-wAN"/>
@@ -326,7 +337,7 @@
             <objects>
                 <viewController title="About" id="S26-5K-Gqh" customClass="AboutViewController" customModule="TeenEase" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tSG-wS-kaw">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aa0-ZJ-GJV">
@@ -338,6 +349,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" backgroundImage="Back arrow button"/>
                                         <connections>
+                                            <action selector="saveAboutButton:" destination="S26-5K-Gqh" eventType="touchUpInside" id="f9Q-GZ-Dfc"/>
                                             <segue destination="WVS-Fn-coL" kind="show" id="D9c-cW-YKE"/>
                                         </connections>
                                     </button>
@@ -360,6 +372,13 @@
                                 <rect key="frame" x="0.0" y="128" width="414" height="585"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="First Name:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vdd-qN-klW">
+                                        <rect key="frame" x="8" y="65" width="185" height="96"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="NotoSansJP-Regular" family="Noto Sans JP" pointSize="17"/>
+                                        <color key="textColor" red="0.1025752798" green="0.0086635854100000007" blue="0.23974809050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Country:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u9M-ah-Pjg">
                                         <rect key="frame" x="0.0" y="209" width="185" height="96"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -389,13 +408,27 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.1025752798" green="0.0086635854100000007" blue="0.23974809050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="First Name:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vdd-qN-klW">
-                                        <rect key="frame" x="8" y="65" width="185" height="96"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qw5-j4-aal">
+                                        <rect key="frame" x="57" y="142" width="269" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="NotoSansJP-Regular" family="Noto Sans JP" pointSize="17"/>
                                         <color key="textColor" red="0.1025752798" green="0.0086635854100000007" blue="0.23974809050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                        <fontDescription key="fontDescription" name="NotoSansJP-Light" family="Noto Sans JP" pointSize="22"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XfU-47-gsK">
+                                        <rect key="frame" x="57" y="421" width="269" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="textColor" red="0.1025752798" green="0.0086635854100000007" blue="0.23974809050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="NotoSansJP-Light" family="Noto Sans JP" pointSize="22"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="isJ-1q-EMA">
+                                        <rect key="frame" x="57" y="281" width="269" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="textColor" red="0.1025752798" green="0.0086635854100000007" blue="0.23974809050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="NotoSansJP-Light" family="Noto Sans JP" pointSize="22"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <userDefinedRuntimeAttributes>
@@ -410,7 +443,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="7Qb-nz-4Ld"/>
                     <connections>
-                        <outlet property="firstname" destination="vdd-qN-klW" id="Hpd-zB-xpY"/>
+                        <outlet property="age" destination="XfU-47-gsK" id="Qtz-Ea-vlJ"/>
+                        <outlet property="country" destination="isJ-1q-EMA" id="4bL-4r-tcZ"/>
+                        <outlet property="name" destination="Qw5-j4-aal" id="yZf-Vw-LtL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cTV-nj-TVU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -463,43 +498,71 @@
                                 <rect key="frame" x="0.0" y="220" width="414" height="495"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="National Suicide Prevention LIfeline" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sbu-Oe-cG9">
-                                        <rect key="frame" x="21" y="48" width="373" height="51"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="National Suicide Prevention Lifeline:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sbu-Oe-cG9">
+                                        <rect key="frame" x="21" y="15" width="373" height="51"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="NotoSansJP-Regular" family="Noto Sans JP" pointSize="20"/>
                                         <color key="textColor" red="0.1025752798" green="0.0086635854100000007" blue="0.23974809050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Domestic Violence Hotline:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PQT-b5-8yL">
-                                        <rect key="frame" x="21" y="189" width="373" height="51"/>
+                                        <rect key="frame" x="18" y="393" width="373" height="51"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="NotoSansJP-Regular" family="Noto Sans JP" pointSize="20"/>
                                         <color key="textColor" red="0.1025752798" green="0.0086635854100000007" blue="0.23974809050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SAMHSA’s National Helpline:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9y7-qQ-Ysh">
-                                        <rect key="frame" x="18" y="326" width="373" height="51"/>
+                                        <rect key="frame" x="21" y="203" width="373" height="51"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="NotoSansJP-Regular" family="Noto Sans JP" pointSize="20"/>
                                         <color key="textColor" red="0.1025752798" green="0.0086635854100000007" blue="0.23974809050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="800-273-8255 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ki-Da-cya">
-                                        <rect key="frame" x="90" y="96" width="236" height="75"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="NotoSansJP-Medium" family="Noto Sans JP" pointSize="30"/>
-                                        <color key="textColor" red="0.1025752798" green="0.0086635854100000007" blue="0.23974809050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="800-799-7233 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ze5-gf-bcl">
-                                        <rect key="frame" x="107" y="248" width="200" height="45"/>
+                                        <rect key="frame" x="86" y="34" width="236" height="75"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="NotoSansJP-Medium" family="Noto Sans JP" pointSize="30"/>
                                         <color key="textColor" red="0.1025752798" green="0.0086635854100000007" blue="0.23974809050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="800-662-4357" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yzd-2C-5ha">
-                                        <rect key="frame" x="107" y="392" width="193" height="45"/>
+                                        <rect key="frame" x="111" y="238" width="193" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="NotoSansJP-Medium" family="Noto Sans JP" pointSize="30"/>
+                                        <color key="textColor" red="0.1025752798" green="0.0086635854100000007" blue="0.23974809050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Crisis Text Line:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJ5-eX-4oZ">
+                                        <rect key="frame" x="121" y="125" width="160" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="NotoSansJP-Regular" family="Noto Sans JP" pointSize="20"/>
+                                        <color key="textColor" red="0.1025752798" green="0.0086635854100000007" blue="0.23974809050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Text “HOME” to 741741" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wu8-jp-XzS">
+                                        <rect key="frame" x="58" y="145" width="298" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="NotoSansJP-Medium" family="Noto Sans JP" pointSize="27"/>
+                                        <color key="textColor" red="0.1025752798" green="0.0086635854100000007" blue="0.23974809050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TheTrevorProject Lifeline:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JrL-cu-Nvp">
+                                        <rect key="frame" x="86" y="309" width="240" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="NotoSansJP-Regular" family="Noto Sans JP" pointSize="20"/>
+                                        <color key="textColor" red="0.1025752798" green="0.0086635854100000007" blue="0.23974809050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="866-488-7386" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W7p-tw-AAE">
+                                        <rect key="frame" x="105" y="334" width="193" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="NotoSansJP-Medium" family="Noto Sans JP" pointSize="30"/>
+                                        <color key="textColor" red="0.1025752798" green="0.0086635854100000007" blue="0.23974809050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="800-799-7233 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ze5-gf-bcl">
+                                        <rect key="frame" x="104" y="429" width="200" height="45"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="NotoSansJP-Medium" family="Noto Sans JP" pointSize="30"/>
                                         <color key="textColor" red="0.1025752798" green="0.0086635854100000007" blue="0.23974809050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -540,7 +603,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="Back arrow button"/>
                                 <connections>
-                                    <segue destination="9pv-A4-QxB" kind="show" id="d66-jp-Rfb"/>
+                                    <segue destination="49e-Tb-3d3" kind="show" id="JYW-48-UlV"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select your Safe Space" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ow-Lk-jbh">
@@ -555,23 +618,12 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="White+Yellow Arrow Button"/>
                                 <connections>
-                                    <action selector="textfieldaction:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="kun-58-AZY"/>
+                                    <action selector="nextbutton:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="Sqp-9O-F5I"/>
                                     <segue destination="q3d-9l-289" kind="show" id="oGF-LX-bWq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rqj-oj-pue">
-                                <rect key="frame" x="62" y="320" width="237" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="NotoSansJP-Regular" family="Noto Sans JP" pointSize="26"/>
-                                <state key="normal" title="Scenery:">
-                                    <color key="titleColor" red="0.99607843139999996" green="0.98823529409999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="sceneryAction:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="uoK-pC-cL7"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bil-Hg-7rV">
-                                <rect key="frame" x="62" y="433" width="222" height="56"/>
+                                <rect key="frame" x="62" y="433" width="300" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="NotoSansJP-Regular" family="Noto Sans JP" pointSize="26"/>
                                 <state key="normal" title="Sounds:">
@@ -594,9 +646,6 @@
                                 <color key="textColor" red="0.99607843139999996" green="0.98823529409999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="NotoSansJP-Regular" family="Noto Sans JP" pointSize="26"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="textfield:" destination="nMl-4i-bvS" eventType="editingDidEnd" id="v8u-QV-XrX"/>
-                                </connections>
                             </textField>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fUk-pZ-FM9">
                                 <rect key="frame" x="62" y="398" width="280" height="2"/>
@@ -613,6 +662,17 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99607843139999996" green="0.98823529409999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rqj-oj-pue">
+                                <rect key="frame" x="62" y="317" width="280" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="NotoSansJP-Regular" family="Noto Sans JP" pointSize="26"/>
+                                <state key="normal" title="Scenery:">
+                                    <color key="titleColor" red="0.99607843139999996" green="0.98823529409999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="sceneryAction:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="uoK-pC-cL7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
@@ -622,21 +682,20 @@
                     <connections>
                         <outlet property="sceneryButton" destination="rqj-oj-pue" id="2aI-tZ-emt"/>
                         <outlet property="soundsButton" destination="bil-Hg-7rV" id="ACP-0b-tMN"/>
-                        <outlet property="textfield" destination="zfu-9m-aDh" id="4n2-iE-DLh"/>
+                        <outlet property="textfield" destination="zfu-9m-aDh" id="PKU-iS-s8h"/>
                         <segue destination="q3d-9l-289" kind="presentation" identifier="text" id="WLv-9g-Cjp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
-                <exit id="nMl-4i-bvS" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="749.27536231884062" y="359.59821428571428"/>
+            <point key="canvasLocation" x="600" y="426.5625"/>
         </scene>
         <!--View SS-->
         <scene sceneID="ri2-9T-d9u">
             <objects>
                 <viewController title="View SS" id="q3d-9l-289" customClass="SSPageViewController" customModule="TeenEase" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FU7-Hq-eXw">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xtf-3O-rHm">
@@ -644,14 +703,15 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="Back arrow button"/>
                                 <connections>
+                                    <action selector="ssbackbuttonaction:" destination="q3d-9l-289" eventType="touchUpInside" id="haR-1o-jau"/>
                                     <segue destination="8rJ-Kc-sve" kind="show" identifier="text" id="hwn-nd-m1q"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Labellllll" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xrQ-Jb-uyI">
-                                <rect key="frame" x="-38" y="132" width="161" height="67"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Breathe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xrQ-Jb-uyI">
+                                <rect key="frame" x="183" y="280" width="161" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="NotoSansJP-Regular" family="Noto Sans JP" pointSize="34"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" red="0.1025752798" green="0.0086635854100000007" blue="0.23974809050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -660,12 +720,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="xUm-d9-zgS"/>
                     <connections>
-                        <outlet property="textlabel" destination="xrQ-Jb-uyI" id="plJ-MC-9Xt"/>
+                        <outlet property="ssbackbutton" destination="Xtf-3O-rHm" id="6aJ-tu-QVo"/>
+                        <outlet property="textlabel" destination="xrQ-Jb-uyI" id="Bvg-RW-IaP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EQd-49-otN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1662.3188405797102" y="357.58928571428572"/>
+            <point key="canvasLocation" x="1655" y="521"/>
         </scene>
         <!--Intro-->
         <scene sceneID="lMZ-88-mzw">
@@ -749,6 +810,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="White+Yellow Arrow Button"/>
                                 <connections>
+                                    <action selector="saveBIButton:" destination="rg8-DP-6x3" eventType="touchUpInside" id="K1v-Ep-CQn"/>
                                     <segue destination="49e-Tb-3d3" kind="show" id="lpd-d0-cVG"/>
                                 </connections>
                             </button>
@@ -896,11 +958,11 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="lpd-d0-cVG"/>
+        <segue reference="Ggd-Jg-Pw0"/>
         <segue reference="WLv-9g-Cjp"/>
         <segue reference="hwn-nd-m1q"/>
         <segue reference="D9c-cW-YKE"/>
-        <segue reference="d66-jp-Rfb"/>
+        <segue reference="ooU-a1-nqo"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="About button" width="915" height="339"/>
@@ -910,17 +972,18 @@
         <image name="Rate us! button" width="915" height="339"/>
         <image name="Resources button" width="915" height="339"/>
         <image name="Safe Space Selection" width="1125" height="2436"/>
-        <image name="WaterBgbutton" width="915" height="339"/>
         <image name="White+Yellow Arrow Button" width="261" height="261"/>
         <image name="bluehex" width="33" height="29"/>
         <image name="bluehomeicon" width="33" height="30"/>
         <image name="blueprofile.png" width="23" height="30"/>
         <image name="bluesound" width="42" height="26"/>
         <image name="darkbackbutton" width="12" height="23"/>
-        <image name="flowerBGbutton" width="915" height="339"/>
-        <image name="hexBGbutton" width="915" height="339"/>
         <image name="homescreen" width="1149" height="1794"/>
+        <image name="newcloudbutton" width="915" height="264"/>
+        <image name="newflowerbutton" width="915" height="264"/>
+        <image name="newhexbutton" width="915" height="264"/>
         <image name="newhomeicon" width="33" height="30"/>
+        <image name="newwaterbutton" width="915" height="264"/>
         <image name="peachpausebutton" width="210" height="210"/>
         <image name="whitehex" width="33" height="28"/>
         <image name="whiteprofile.png" width="23" height="31"/>

@@ -15,9 +15,10 @@ class SSViewController: UIViewController {
     let dropDownSounds = DropDown()
     
     @IBOutlet weak var textfield: UITextField!
-    var ssText = ""
-    @IBOutlet weak var sceneryButton: UIButton!
     
+    var ssText = ""
+    
+    @IBOutlet weak var sceneryButton: UIButton!
     @IBAction func sceneryAction(_ sender: Any) {
         dropDownScenery.show()
     }
@@ -27,22 +28,27 @@ class SSViewController: UIViewController {
         dropDownSounds.show()
     }
 
-    @IBAction func textfieldaction(_ sender: Any) {
+    @IBAction func nextbutton(_ sender: Any) {
         self.ssText = textfield.text!
         performSegue(withIdentifier: "text", sender: self)
     }
+
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         var vc = segue.destination as! SSPageViewController
         vc.finalText = self.ssText
-    
+
     }
 
-    
     override func viewDidLoad() {
             super.viewDidLoad()
+        
+            DropDown.appearance().backgroundColor = UIColor.lightGray
+            DropDown.appearance().selectionBackgroundColor = UIColor.systemIndigo
+            DropDown.appearance().textColor = UIColor.white
 
             /// set the data
-            dropDownScenery.dataSource = [" Beach", " Rain", " Snow"]
+            dropDownScenery.dataSource = [" Sunset Beach", " Dripping Rain", " Soft Snow"]
             /// tell the dropdowns where to open
             dropDownScenery.anchorView = sceneryButton
             /// move down the popup so it doesn't cover the button
@@ -53,7 +59,7 @@ class SSViewController: UIViewController {
                 self.sceneryButton.setTitle("Scenery: \(item)", for: .normal)
             }
             
-            dropDownSounds.dataSource = [" Waves", " Rain", " Wind"]
+            dropDownSounds.dataSource = [" Crashing Waves", " Raindrops", " Light Winds"]
             /// tell the dropdowns where to open
             dropDownSounds.anchorView = sceneryButton
             /// move down the popup so it doesn't cover the button

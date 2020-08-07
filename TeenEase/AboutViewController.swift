@@ -10,12 +10,31 @@ import UIKit
 
 class AboutViewController: UIViewController {
 
-    @IBOutlet weak var firstname: UILabel!
-    override func viewDidLoad() {
-        super.viewDidLoad()
+
+    @IBAction func saveAboutButton(_ sender: Any) {
         let defaults = UserDefaults.standard
-        let myname = defaults.string(forKey: "firstname")
-        firstname.text = myname
+        //Set
+        defaults.set(name.text, forKey: "firstname")
+        defaults.set(age.text, forKey: "age")
+        defaults.set(country.text, forKey: "country")
+    }
+    @IBOutlet weak var name: UITextField!
+    
+    @IBOutlet weak var country: UITextField!
+ 
+    @IBOutlet weak var age: UITextField!
+
+    
+   override func viewDidLoad() {
+          super.viewDidLoad()
+          let defaults = UserDefaults.standard
+    
+    name.text = defaults.string(forKey: "firstname")
+    
+    country.text = defaults.string(forKey: "country")
+    
+    age.text = defaults.string(forKey: "age")
+    
         // Do any additional setup after loading the view.
     }
     
@@ -29,5 +48,6 @@ class AboutViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+
 
 }

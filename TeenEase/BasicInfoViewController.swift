@@ -10,16 +10,19 @@ import UIKit
 
 class BasicInfoViewController: UIViewController {
 
-    @IBOutlet weak var ageInput: UITextField!
-    @IBOutlet weak var countryInput: UITextField!
-    @IBOutlet weak var firstNameInput: UITextField!
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    @IBAction func saveBIButton(_ sender: Any) {
         let defaults = UserDefaults.standard
         //Set
         defaults.set(firstNameInput.text, forKey: "firstname")
         defaults.set(ageInput.text, forKey: "age")
         defaults.set(countryInput.text, forKey: "country")
+    }
+    @IBOutlet weak var ageInput: UITextField!
+    @IBOutlet weak var countryInput: UITextField!
+    @IBOutlet weak var firstNameInput: UITextField!
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
 
 
         // Do any additional setup after loading the view.

@@ -13,7 +13,12 @@ import Lottie
 class NewFlowerViewController: UIViewController {
     @IBOutlet weak var breathingtext: UILabel!
     let animationView = AnimationView()
-
+    
+    
+    @IBAction func pauseButton(_ sender: Any) {
+         self.animationView.pause()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 setupAnimation()
@@ -30,7 +35,7 @@ setupAnimation()
         animationView.contentMode = .scaleAspectFit
 //        animationView.loopMode = .autoReverse
         animationView.play(completion: { (finished) in
-                self.breathingtext.text = "Breathe out"
+                self.breathingtext.text = "Breathe Out"
                 self.animationView.play(completion: { (finished) in
                     self.animationView.play(completion: { (finished) in
                         self.animationView.play(completion: { (finished) in
@@ -46,6 +51,8 @@ setupAnimation()
                     self.breathingtext.text = "Breathe In"
                 })
             self.animationView.animationSpeed = -0.5
+            
+
 
         })
         view.addSubview(animationView)
