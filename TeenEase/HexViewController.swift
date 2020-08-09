@@ -26,7 +26,7 @@ setupAnimation()
     private func setupAnimation() {
           animationView.animation = Animation.named("hex")
           animationView.frame = view.bounds
-          animationView.frame = CGRect(x: 0, y: 0, width: 500,height:500)
+          animationView.frame = CGRect(x: -5, y: 0, width: 500,height:500)
           animationView.center = self.view.center
           animationView.backgroundColor = .white
           animationView.contentMode = .scaleAspectFit
@@ -38,16 +38,16 @@ setupAnimation()
                           self.animationView.play(completion: { (finished) in
                               self.animationView.play()
                               self.animationView.loopMode = .autoReverse
-                            self.animationView.animationSpeed = 0.5
+                            self.animationView.animationSpeed = 0.25
                               self.hextext1.text = ""
                           })
-                        self.animationView.animationSpeed = -0.5
+                        self.animationView.animationSpeed = -0.25
                           self.hextext1.text = "Breathe Out"
                       })
-                    self.animationView.animationSpeed = 0.5
+                    self.animationView.animationSpeed = 0.25
                       self.hextext1.text = "Breathe In"
                   })
-            self.animationView.animationSpeed = -0.5
+            self.animationView.animationSpeed = -0.25
               
           })
           view.addSubview(animationView)

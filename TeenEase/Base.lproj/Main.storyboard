@@ -23,7 +23,7 @@
             <objects>
                 <viewController title="BG" id="9pv-A4-QxB" customClass="FirstViewController" customModule="TeenEase" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="854"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="771"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FGH-lE-rSD">
@@ -83,7 +83,10 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ReL-Cl-EIC">
                                         <rect key="frame" x="47" y="352" width="320" height="90"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" backgroundImage="newcloudbutton"/>
+                                        <state key="normal" backgroundImage="newcolorbutton"/>
+                                        <connections>
+                                            <segue destination="x2p-MX-AaH" kind="show" id="nqS-Lz-wDn"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qjo-y9-Qpc">
                                         <rect key="frame" x="47" y="138" width="320" height="90"/>
@@ -122,22 +125,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZXf-4B-AdM">
-                                <rect key="frame" x="49" y="40" width="46" height="30"/>
+                                <rect key="frame" x="66" y="44" width="12" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" backgroundImage="darkbackbutton"/>
                                 <connections>
                                     <segue destination="9pv-A4-QxB" kind="show" id="8wm-2y-BMW"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Breathe In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GM3-aZ-KVX">
+                                <rect key="frame" x="121" y="151" width="177" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="NotoSansJP-Regular" family="Noto Sans JP" pointSize="30"/>
+                                <color key="textColor" red="0.1025752798" green="0.0086635854100000007" blue="0.23974809050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.99607843139999996" green="0.98823529409999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="vT3-Yt-zbZ"/>
                     </view>
                     <navigationItem key="navigationItem" id="BzZ-F6-0PC"/>
+                    <connections>
+                        <outlet property="breathingtext2" destination="GM3-aZ-KVX" id="9G7-0W-B2q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DdX-E5-tmb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2301" y="-664"/>
+            <point key="canvasLocation" x="2298.5507246376815" y="-664.28571428571422"/>
         </scene>
         <!--Flower BG-->
         <scene sceneID="nQa-I9-HRw">
@@ -166,7 +179,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Breathe In" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s6A-10-ppx">
                                 <rect key="frame" x="55" y="123" width="305" height="117"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="NotoSansJP-Light" family="Noto Sans JP" pointSize="30"/>
+                                <fontDescription key="fontDescription" name="NotoSansJP-Regular" family="Noto Sans JP" pointSize="30"/>
                                 <color key="textColor" red="0.1025752798" green="0.0086635854100000007" blue="0.23974809050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -192,22 +205,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7CI-kf-wXA">
-                                <rect key="frame" x="43" y="44" width="46" height="30"/>
+                                <rect key="frame" x="60" y="48" width="12" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" backgroundImage="darkbackbutton"/>
                                 <connections>
                                     <segue destination="9pv-A4-QxB" kind="show" id="QUT-aV-MET"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HELLO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BU5-NO-dz7">
-                                <rect key="frame" x="62" y="123" width="242" height="75"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Breathe In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BU5-NO-dz7">
+                                <rect key="frame" x="86" y="127" width="242" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="NotoSansJP-Regular" family="Noto Sans JP" pointSize="30"/>
+                                <color key="textColor" red="0.1025752798" green="0.0086635854100000007" blue="0.23974809050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.99607843139999996" green="0.98823529409999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Rzq-qp-ZOz"/>
                     </view>
                     <navigationItem key="navigationItem" id="ft7-BU-Fss"/>
@@ -224,33 +237,43 @@
             <objects>
                 <viewController title="Color BG" id="x2p-MX-AaH" customClass="ColorViewController" customModule="TeenEase" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Rc-Iz-QhE">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="akP-Pt-Owa">
-                                <rect key="frame" x="35" y="48" width="46" height="30"/>
+                                <rect key="frame" x="53" y="83" width="12" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" backgroundImage="darkbackbutton"/>
                                 <connections>
                                     <segue destination="9pv-A4-QxB" kind="show" id="TD2-i6-0q9"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Breathe In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2El-vF-5Ed">
+                                <rect key="frame" x="121" y="195" width="189" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="NotoSansJP-Regular" family="Noto Sans JP" pointSize="30"/>
+                                <color key="textColor" red="0.1025752798" green="0.0086635854100000007" blue="0.23974809050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.99607843139999996" green="0.98823529409999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="3eC-mx-r2w"/>
                     </view>
                     <navigationItem key="navigationItem" id="QUS-CM-IUY"/>
+                    <connections>
+                        <outlet property="breathingtext3" destination="2El-vF-5Ed" id="KN4-H6-vvA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CzM-1b-NEn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3803" y="-695"/>
+            <point key="canvasLocation" x="3802.898550724638" y="-695.08928571428567"/>
         </scene>
         <!--Profile-->
         <scene sceneID="p6C-AW-OTm">
             <objects>
                 <viewController title="Profile" id="WVS-Fn-coL" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2h7-vC-Nc1">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mBt-ca-J0k">
@@ -688,7 +711,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="600" y="426.5625"/>
+            <point key="canvasLocation" x="710" y="451"/>
         </scene>
         <!--View SS-->
         <scene sceneID="ri2-9T-d9u">
@@ -958,11 +981,11 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Ggd-Jg-Pw0"/>
+        <segue reference="JYW-48-UlV"/>
         <segue reference="WLv-9g-Cjp"/>
         <segue reference="hwn-nd-m1q"/>
-        <segue reference="D9c-cW-YKE"/>
-        <segue reference="ooU-a1-nqo"/>
+        <segue reference="qzd-Ts-DHY"/>
+        <segue reference="u7Y-xg-7CH"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="About button" width="915" height="339"/>
@@ -979,7 +1002,7 @@
         <image name="bluesound" width="42" height="26"/>
         <image name="darkbackbutton" width="12" height="23"/>
         <image name="homescreen" width="1149" height="1794"/>
-        <image name="newcloudbutton" width="915" height="264"/>
+        <image name="newcolorbutton" width="915" height="264"/>
         <image name="newflowerbutton" width="915" height="264"/>
         <image name="newhexbutton" width="915" height="264"/>
         <image name="newhomeicon" width="33" height="30"/>

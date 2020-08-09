@@ -17,10 +17,13 @@ class SSViewController: UIViewController {
     @IBOutlet weak var textfield: UITextField!
     
     var ssText = ""
+//    var sceneryText = ""
     
     @IBOutlet weak var sceneryButton: UIButton!
     @IBAction func sceneryAction(_ sender: Any) {
         dropDownScenery.show()
+//        self.sceneryText = textfield.text!
+//        performSegue(withIdentifier: "text", sender: self)
     }
     
     @IBOutlet weak var soundsButton: UIButton!
@@ -34,10 +37,11 @@ class SSViewController: UIViewController {
     }
 
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        var vc = segue.destination as! SSPageViewController
-        vc.finalText = self.ssText
-
+   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+       var vc = segue.destination as! SSPageViewController
+//        vc.finalText = self.ssText
+//       vc.finalscenery = self.sceneryText
+//
     }
 
     override func viewDidLoad() {
@@ -57,6 +61,7 @@ class SSViewController: UIViewController {
             dropDownScenery.selectionAction = { [unowned self] (index: Int, item: String) in
     //          print("Selected item: \(item) at index: \(index)")
                 self.sceneryButton.setTitle("Scenery: \(item)", for: .normal)
+                print(item)
             }
             
             dropDownSounds.dataSource = [" Crashing Waves", " Raindrops", " Light Winds"]
@@ -68,6 +73,7 @@ class SSViewController: UIViewController {
             dropDownSounds.selectionAction = { [unowned self] (index: Int, item: String) in
     //          print("Selected item: \(item) at index: \(index)")
                 self.soundsButton.setTitle("Sounds: \(item)", for: .normal)
+                print(item)
             }
 
         }

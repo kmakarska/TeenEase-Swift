@@ -10,6 +10,7 @@ import UIKit
 import Lottie
 
 class ColorViewController: UIViewController {
+    @IBOutlet weak var breathingtext3: UILabel!
     let animationView = AnimationView()
 
     override func viewDidLoad() {
@@ -20,15 +21,36 @@ setupAnimation()
         // Do any additional setup after loading the view.
     }
 
-    private func setupAnimation() {
-        animationView.animation = Animation.named("color")
-        animationView.frame = view.bounds
-        animationView.backgroundColor = .white
-        animationView.contentMode = .scaleAspectFit
-        animationView.loopMode = .loop
-        animationView.play()
-        view.addSubview(animationView)
-    }
+  private func setupAnimation() {
+         animationView.animation = Animation.named("color")
+         animationView.frame = view.bounds
+         animationView.frame = CGRect(x: 10, y: 200, width: 400,height:400)
+  //       animationView.backgroundColor = .white
+         animationView.contentMode = .scaleAspectFit
+ //        animationView.loopMode = .autoReverse
+         animationView.play(completion: { (finished) in
+                 self.breathingtext3.text = "Breathe Out"
+                 self.animationView.play(completion: { (finished) in
+                     self.animationView.play(completion: { (finished) in
+                         self.animationView.play(completion: { (finished) in
+                             self.animationView.play()
+                             self.animationView.loopMode = .autoReverse
+                             self.animationView.animationSpeed = 1
+                             self.breathingtext3.text = ""
+                         })
+                        self.animationView.animationSpeed = -1
+                         self.breathingtext3.text = "Breathe Out"
+                     })
+                    self.animationView.animationSpeed = 1
+                     self.breathingtext3.text = "Breathe In"
+                 })
+             self.animationView.animationSpeed = -1
+             
+
+
+         })
+         view.addSubview(animationView)
+     }
     
 
     /*

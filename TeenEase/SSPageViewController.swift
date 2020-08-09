@@ -24,12 +24,15 @@ class SSPageViewController: UIViewController {
     
     var audioPlayer: AVAudioPlayer?
     var finalText = ""
+    var finalscenery = ""
     
     override func viewDidLoad() {
        super.viewDidLoad()
         textlabel.layer.zPosition = 1;
         ssbackbutton.layer.zPosition = 1;
         textlabel.text = finalText
+        print(finalText)
+        print(finalscenery)
         
         
         
