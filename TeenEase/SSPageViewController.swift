@@ -25,6 +25,9 @@ class SSPageViewController: UIViewController {
     var audioPlayer: AVAudioPlayer?
     var finalText = ""
     var finalscenery = ""
+    var finalsounds = ""
+    var soundselect = ""
+    var sceneryselect = ""
     
     override func viewDidLoad() {
        super.viewDidLoad()
@@ -33,12 +36,23 @@ class SSPageViewController: UIViewController {
         textlabel.text = finalText
         print(finalText)
         print(finalscenery)
+        print(finalsounds)
+        if finalsounds == " Crashing Waves" {
+            soundselect = "crashingwaves"
+        } else if finalsounds == " Raindrops" {
+            soundselect = "rainsound"
+        } else { soundselect = "crashingwaves"
+        }
+        if finalscenery == " Sunset Beach"{
+            sceneryselect = "sunsetbeach"
+        }
         
         
         
         
         
-        let pathToSound = Bundle.main.path(forResource: "rainsound", ofType: "mp3")!
+    
+        let pathToSound = Bundle.main.path(forResource: soundselect, ofType: "mp3")!
                let url = URL(fileURLWithPath: pathToSound)
                do {
                    audioPlayer = try AVAudioPlayer(contentsOf: url)
@@ -53,7 +67,7 @@ class SSPageViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        let path = Bundle.main.path(forResource: "rain", ofType: "mp4")!
+        let path = Bundle.main.path(forResource: sceneryselect, ofType: "mp4")!
               let url = URL(fileURLWithPath: path)
               let asset = AVAsset(url: url)
               let playerItem = AVPlayerItem(asset: asset)

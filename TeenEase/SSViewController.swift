@@ -17,7 +17,8 @@ class SSViewController: UIViewController {
     @IBOutlet weak var textfield: UITextField!
     
     var ssText = ""
-//    var sceneryText = ""
+    var sceneryText = ""
+    var soundsText = ""
     
     @IBOutlet weak var sceneryButton: UIButton!
     @IBAction func sceneryAction(_ sender: Any) {
@@ -38,9 +39,10 @@ class SSViewController: UIViewController {
 
     
    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-       var vc = segue.destination as! SSPageViewController
-//        vc.finalText = self.ssText
-//       vc.finalscenery = self.sceneryText
+       var vc = segue.destination as? SSPageViewController
+    vc?.finalText = self.ssText
+    vc?.finalscenery = self.sceneryText
+    vc?.finalsounds = self.soundsText
 //
     }
 
@@ -61,7 +63,7 @@ class SSViewController: UIViewController {
             dropDownScenery.selectionAction = { [unowned self] (index: Int, item: String) in
     //          print("Selected item: \(item) at index: \(index)")
                 self.sceneryButton.setTitle("Scenery: \(item)", for: .normal)
-                print(item)
+                self.sceneryText = item
             }
             
             dropDownSounds.dataSource = [" Crashing Waves", " Raindrops", " Light Winds"]
@@ -73,7 +75,7 @@ class SSViewController: UIViewController {
             dropDownSounds.selectionAction = { [unowned self] (index: Int, item: String) in
     //          print("Selected item: \(item) at index: \(index)")
                 self.soundsButton.setTitle("Sounds: \(item)", for: .normal)
-                print(item)
+                self.soundsText = item
             }
 
         }

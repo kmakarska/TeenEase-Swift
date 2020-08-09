@@ -11,6 +11,7 @@
 		0243A90824D4F2F8001F1A69 /* rain.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 02D2C69324D4F17C00805AEA /* rain.mp4 */; };
 		0243A90A24D631F0001F1A69 /* BasicInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0243A90924D631F0001F1A69 /* BasicInfoViewController.swift */; };
 		0243A90C24D632B8001F1A69 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0243A90B24D632B8001F1A69 /* AboutViewController.swift */; };
+		02525C7524E03D5C00F277C1 /* sunsetbeach.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 02525C7424E03D5C00F277C1 /* sunsetbeach.mp4 */; };
 		027648E124AFCFEF006D7DE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027648E024AFCFEF006D7DE0 /* AppDelegate.swift */; };
 		027648E324AFCFEF006D7DE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027648E224AFCFEF006D7DE0 /* SceneDelegate.swift */; };
 		027648E524AFCFEF006D7DE0 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027648E424AFCFEF006D7DE0 /* IntroViewController.swift */; };
@@ -34,6 +35,7 @@
 		02873C5124CE324C00A59797 /* SSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02873C5024CE324C00A59797 /* SSViewController.swift */; };
 		02873C5324CF03BB00A59797 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 02873C5224CF03BB00A59797 /* fonts */; };
 		02873C9124CFAA1E00A59797 /* NewFlowerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02873C9024CFAA1E00A59797 /* NewFlowerViewController.swift */; };
+		02B9D58B24E03E0B003AF170 /* crashingwaves.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 02B9D58A24E03E0B003AF170 /* crashingwaves.mp3 */; };
 		02D2C69224D4EFCA00805AEA /* SSPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D2C69124D4EFCA00805AEA /* SSPageViewController.swift */; };
 		694039585A65B38FCCB63C14 /* Pods_TeenEase_TeenEaseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E9F6A20AA49CF0F06D501DB /* Pods_TeenEase_TeenEaseUITests.framework */; };
 		B39A3DB9F6F10B13170F4B3C /* Pods_TeenEaseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7B5FA480256FDFF991F877B /* Pods_TeenEaseTests.framework */; };
@@ -61,6 +63,7 @@
 		02427D2724D711EA0075E3D1 /* rainsound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rainsound.mp3; sourceTree = "<group>"; };
 		0243A90924D631F0001F1A69 /* BasicInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicInfoViewController.swift; sourceTree = "<group>"; };
 		0243A90B24D632B8001F1A69 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		02525C7424E03D5C00F277C1 /* sunsetbeach.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sunsetbeach.mp4; sourceTree = "<group>"; };
 		027648DD24AFCFEE006D7DE0 /* TeenEase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeenEase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		027648E024AFCFEF006D7DE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		027648E224AFCFEF006D7DE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +93,7 @@
 		02873C5024CE324C00A59797 /* SSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSViewController.swift; sourceTree = "<group>"; };
 		02873C5224CF03BB00A59797 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
 		02873C9024CFAA1E00A59797 /* NewFlowerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFlowerViewController.swift; sourceTree = "<group>"; };
+		02B9D58A24E03E0B003AF170 /* crashingwaves.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = crashingwaves.mp3; sourceTree = "<group>"; };
 		02D2C69124D4EFCA00805AEA /* SSPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSPageViewController.swift; sourceTree = "<group>"; };
 		02D2C69324D4F17C00805AEA /* rain.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = rain.mp4; sourceTree = "<group>"; };
 		2E9F6A20AA49CF0F06D501DB /* Pods_TeenEase_TeenEaseUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeenEase_TeenEaseUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -160,7 +164,9 @@
 				02873C5224CF03BB00A59797 /* fonts */,
 				02873C4824CDEA6400A59797 /* newhomeicon.png */,
 				02873C3A24CC96FA00A59797 /* water2.json */,
+				02525C7424E03D5C00F277C1 /* sunsetbeach.mp4 */,
 				02427D2724D711EA0075E3D1 /* rainsound.mp3 */,
+				02B9D58A24E03E0B003AF170 /* crashingwaves.mp3 */,
 				0276494824CC927E006D7DE0 /* lf30_editor_Fe0O9U.json */,
 				0276493E24CB4825006D7DE0 /* cloud.json */,
 				0276493C24CB4814006D7DE0 /* color.json */,
@@ -339,8 +345,10 @@
 			files = (
 				02873C3B24CC96FA00A59797 /* water2.json in Resources */,
 				027648EF24AFCFEF006D7DE0 /* LaunchScreen.storyboard in Resources */,
+				02525C7524E03D5C00F277C1 /* sunsetbeach.mp4 in Resources */,
 				0276493724CB4798006D7DE0 /* realflower.json in Resources */,
 				027648EC24AFCFEF006D7DE0 /* Assets.xcassets in Resources */,
+				02B9D58B24E03E0B003AF170 /* crashingwaves.mp3 in Resources */,
 				0276493F24CB4825006D7DE0 /* cloud.json in Resources */,
 				0276491524BBAB87006D7DE0 /* testflower.json in Resources */,
 				02427D2824D711EA0075E3D1 /* rainsound.mp3 in Resources */,
