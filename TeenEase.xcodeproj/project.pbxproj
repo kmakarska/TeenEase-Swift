@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		023B4E3B24E0F6120022D35B /* blizzard.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 023B4E3A24E0F6120022D35B /* blizzard.mp3 */; };
+		023B4E3D24E0FC550022D35B /* blizzardvideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 023B4E3C24E0FC550022D35B /* blizzardvideo.mp4 */; };
 		02427D2824D711EA0075E3D1 /* rainsound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 02427D2724D711EA0075E3D1 /* rainsound.mp3 */; };
-		0243A90824D4F2F8001F1A69 /* rain.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 02D2C69324D4F17C00805AEA /* rain.mp4 */; };
 		0243A90A24D631F0001F1A69 /* BasicInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0243A90924D631F0001F1A69 /* BasicInfoViewController.swift */; };
 		0243A90C24D632B8001F1A69 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0243A90B24D632B8001F1A69 /* AboutViewController.swift */; };
 		02525C7524E03D5C00F277C1 /* sunsetbeach.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 02525C7424E03D5C00F277C1 /* sunsetbeach.mp4 */; };
@@ -30,6 +31,7 @@
 		0276494524CBA188006D7DE0 /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0276494424CBA188006D7DE0 /* ColorViewController.swift */; };
 		0276494724CBA3E4006D7DE0 /* WaterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0276494624CBA3E4006D7DE0 /* WaterViewController.swift */; };
 		0276494924CC927E006D7DE0 /* lf30_editor_Fe0O9U.json in Resources */ = {isa = PBXBuildFile; fileRef = 0276494824CC927E006D7DE0 /* lf30_editor_Fe0O9U.json */; };
+		027E203524E1C396006ED08C /* rain2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 027E203424E1C396006ED08C /* rain2.mp4 */; };
 		02873C3B24CC96FA00A59797 /* water2.json in Resources */ = {isa = PBXBuildFile; fileRef = 02873C3A24CC96FA00A59797 /* water2.json */; };
 		02873C4924CDEA6400A59797 /* newhomeicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 02873C4824CDEA6400A59797 /* newhomeicon.png */; };
 		02873C5124CE324C00A59797 /* SSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02873C5024CE324C00A59797 /* SSViewController.swift */; };
@@ -60,6 +62,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		023B4E3A24E0F6120022D35B /* blizzard.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = blizzard.mp3; sourceTree = "<group>"; };
+		023B4E3C24E0FC550022D35B /* blizzardvideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = blizzardvideo.mp4; sourceTree = "<group>"; };
 		02427D2724D711EA0075E3D1 /* rainsound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rainsound.mp3; sourceTree = "<group>"; };
 		0243A90924D631F0001F1A69 /* BasicInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicInfoViewController.swift; sourceTree = "<group>"; };
 		0243A90B24D632B8001F1A69 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +92,7 @@
 		0276494424CBA188006D7DE0 /* ColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
 		0276494624CBA3E4006D7DE0 /* WaterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterViewController.swift; sourceTree = "<group>"; };
 		0276494824CC927E006D7DE0 /* lf30_editor_Fe0O9U.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lf30_editor_Fe0O9U.json; sourceTree = "<group>"; };
+		027E203424E1C396006ED08C /* rain2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = rain2.mp4; sourceTree = "<group>"; };
 		02873C3A24CC96FA00A59797 /* water2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = water2.json; sourceTree = "<group>"; };
 		02873C4824CDEA6400A59797 /* newhomeicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newhomeicon.png; sourceTree = "<group>"; };
 		02873C5024CE324C00A59797 /* SSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSViewController.swift; sourceTree = "<group>"; };
@@ -95,7 +100,6 @@
 		02873C9024CFAA1E00A59797 /* NewFlowerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFlowerViewController.swift; sourceTree = "<group>"; };
 		02B9D58A24E03E0B003AF170 /* crashingwaves.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = crashingwaves.mp3; sourceTree = "<group>"; };
 		02D2C69124D4EFCA00805AEA /* SSPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSPageViewController.swift; sourceTree = "<group>"; };
-		02D2C69324D4F17C00805AEA /* rain.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = rain.mp4; sourceTree = "<group>"; };
 		2E9F6A20AA49CF0F06D501DB /* Pods_TeenEase_TeenEaseUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeenEase_TeenEaseUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		48221A145C7E58C41E30D163 /* Pods-TeenEase-TeenEaseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeenEase-TeenEaseUITests.release.xcconfig"; path = "Target Support Files/Pods-TeenEase-TeenEaseUITests/Pods-TeenEase-TeenEaseUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4D6257036DB74AF8651A7185 /* Pods_TeenEase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeenEase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -160,11 +164,13 @@
 		027648DF24AFCFEE006D7DE0 /* TeenEase */ = {
 			isa = PBXGroup;
 			children = (
-				02D2C69324D4F17C00805AEA /* rain.mp4 */,
 				02873C5224CF03BB00A59797 /* fonts */,
 				02873C4824CDEA6400A59797 /* newhomeicon.png */,
+				027E203424E1C396006ED08C /* rain2.mp4 */,
 				02873C3A24CC96FA00A59797 /* water2.json */,
 				02525C7424E03D5C00F277C1 /* sunsetbeach.mp4 */,
+				023B4E3C24E0FC550022D35B /* blizzardvideo.mp4 */,
+				023B4E3A24E0F6120022D35B /* blizzard.mp3 */,
 				02427D2724D711EA0075E3D1 /* rainsound.mp3 */,
 				02B9D58A24E03E0B003AF170 /* crashingwaves.mp3 */,
 				0276494824CC927E006D7DE0 /* lf30_editor_Fe0O9U.json */,
@@ -343,22 +349,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				023B4E3B24E0F6120022D35B /* blizzard.mp3 in Resources */,
 				02873C3B24CC96FA00A59797 /* water2.json in Resources */,
 				027648EF24AFCFEF006D7DE0 /* LaunchScreen.storyboard in Resources */,
 				02525C7524E03D5C00F277C1 /* sunsetbeach.mp4 in Resources */,
 				0276493724CB4798006D7DE0 /* realflower.json in Resources */,
 				027648EC24AFCFEF006D7DE0 /* Assets.xcassets in Resources */,
 				02B9D58B24E03E0B003AF170 /* crashingwaves.mp3 in Resources */,
+				023B4E3D24E0FC550022D35B /* blizzardvideo.mp4 in Resources */,
 				0276493F24CB4825006D7DE0 /* cloud.json in Resources */,
 				0276491524BBAB87006D7DE0 /* testflower.json in Resources */,
 				02427D2824D711EA0075E3D1 /* rainsound.mp3 in Resources */,
 				0276494924CC927E006D7DE0 /* lf30_editor_Fe0O9U.json in Resources */,
+				027E203524E1C396006ED08C /* rain2.mp4 in Resources */,
 				0276494324CBA0EF006D7DE0 /* hex.json in Resources */,
 				027648EA24AFCFEF006D7DE0 /* Main.storyboard in Resources */,
 				02873C5324CF03BB00A59797 /* fonts in Resources */,
 				02873C4924CDEA6400A59797 /* newhomeicon.png in Resources */,
 				0276493D24CB4814006D7DE0 /* color.json in Resources */,
-				0243A90824D4F2F8001F1A69 /* rain.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

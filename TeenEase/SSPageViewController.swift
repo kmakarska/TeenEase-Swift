@@ -41,10 +41,17 @@ class SSPageViewController: UIViewController {
             soundselect = "crashingwaves"
         } else if finalsounds == " Raindrops" {
             soundselect = "rainsound"
-        } else { soundselect = "crashingwaves"
+        } else if finalsounds == " Light Winds" {
+            soundselect = "blizzard"
+        }else { soundselect = "crashingwaves"
         }
         if finalscenery == " Sunset Beach"{
             sceneryselect = "sunsetbeach"
+        } else if finalscenery == " Dripping Rain" {
+            sceneryselect = "rain2"
+        } else if finalscenery == " Soft Snow"{
+            sceneryselect = "blizzardvideo"
+        } else { sceneryselect  = "sunsetbeach"
         }
         
         
@@ -76,7 +83,7 @@ class SSPageViewController: UIViewController {
               self.playerLooper = AVPlayerLooper(player: queuePlayer, templateItem: playerItem)
 
               let layer = AVPlayerLayer(player: queuePlayer)
-              layer.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 870)
+              layer.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 898)
               view.layer.addSublayer(layer)
               
               self.queuePlayer.play()
