@@ -15,7 +15,6 @@
 		02525C7524E03D5C00F277C1 /* sunsetbeach.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 02525C7424E03D5C00F277C1 /* sunsetbeach.mp4 */; };
 		027648E124AFCFEF006D7DE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027648E024AFCFEF006D7DE0 /* AppDelegate.swift */; };
 		027648E324AFCFEF006D7DE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027648E224AFCFEF006D7DE0 /* SceneDelegate.swift */; };
-		027648E524AFCFEF006D7DE0 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027648E424AFCFEF006D7DE0 /* IntroViewController.swift */; };
 		027648EA24AFCFEF006D7DE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 027648E824AFCFEF006D7DE0 /* Main.storyboard */; };
 		027648EC24AFCFEF006D7DE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 027648EB24AFCFEF006D7DE0 /* Assets.xcassets */; };
 		027648EF24AFCFEF006D7DE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 027648ED24AFCFEF006D7DE0 /* LaunchScreen.storyboard */; };
@@ -32,6 +31,8 @@
 		0276494724CBA3E4006D7DE0 /* WaterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0276494624CBA3E4006D7DE0 /* WaterViewController.swift */; };
 		0276494924CC927E006D7DE0 /* lf30_editor_Fe0O9U.json in Resources */ = {isa = PBXBuildFile; fileRef = 0276494824CC927E006D7DE0 /* lf30_editor_Fe0O9U.json */; };
 		027E203524E1C396006ED08C /* rain2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 027E203424E1C396006ED08C /* rain2.mp4 */; };
+		027E207324E308C8006ED08C /* BGSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027E207224E308C8006ED08C /* BGSelectionViewController.swift */; };
+		027E207524E31182006ED08C /* fullsizeblizzard.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 027E207424E31114006ED08C /* fullsizeblizzard.mp4 */; };
 		02873C3B24CC96FA00A59797 /* water2.json in Resources */ = {isa = PBXBuildFile; fileRef = 02873C3A24CC96FA00A59797 /* water2.json */; };
 		02873C4924CDEA6400A59797 /* newhomeicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 02873C4824CDEA6400A59797 /* newhomeicon.png */; };
 		02873C5124CE324C00A59797 /* SSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02873C5024CE324C00A59797 /* SSViewController.swift */; };
@@ -71,7 +72,6 @@
 		027648DD24AFCFEE006D7DE0 /* TeenEase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeenEase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		027648E024AFCFEF006D7DE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		027648E224AFCFEF006D7DE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		027648E424AFCFEF006D7DE0 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		027648E924AFCFEF006D7DE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		027648EB24AFCFEF006D7DE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		027648EE24AFCFEF006D7DE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -93,6 +93,8 @@
 		0276494624CBA3E4006D7DE0 /* WaterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterViewController.swift; sourceTree = "<group>"; };
 		0276494824CC927E006D7DE0 /* lf30_editor_Fe0O9U.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lf30_editor_Fe0O9U.json; sourceTree = "<group>"; };
 		027E203424E1C396006ED08C /* rain2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = rain2.mp4; sourceTree = "<group>"; };
+		027E207224E308C8006ED08C /* BGSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BGSelectionViewController.swift; sourceTree = "<group>"; };
+		027E207424E31114006ED08C /* fullsizeblizzard.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = fullsizeblizzard.mp4; sourceTree = "<group>"; };
 		02873C3A24CC96FA00A59797 /* water2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = water2.json; sourceTree = "<group>"; };
 		02873C4824CDEA6400A59797 /* newhomeicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newhomeicon.png; sourceTree = "<group>"; };
 		02873C5024CE324C00A59797 /* SSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSViewController.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 				02525C7424E03D5C00F277C1 /* sunsetbeach.mp4 */,
 				023B4E3C24E0FC550022D35B /* blizzardvideo.mp4 */,
 				023B4E3A24E0F6120022D35B /* blizzard.mp3 */,
+				027E207424E31114006ED08C /* fullsizeblizzard.mp4 */,
 				02427D2724D711EA0075E3D1 /* rainsound.mp3 */,
 				02B9D58A24E03E0B003AF170 /* crashingwaves.mp3 */,
 				0276494824CC927E006D7DE0 /* lf30_editor_Fe0O9U.json */,
@@ -179,11 +182,11 @@
 				0276494224CBA0EF006D7DE0 /* hex.json */,
 				0276493624CB4798006D7DE0 /* realflower.json */,
 				0276491424BBAB87006D7DE0 /* testflower.json */,
+				027E207224E308C8006ED08C /* BGSelectionViewController.swift */,
 				0243A90924D631F0001F1A69 /* BasicInfoViewController.swift */,
 				0243A90B24D632B8001F1A69 /* AboutViewController.swift */,
 				027648E024AFCFEF006D7DE0 /* AppDelegate.swift */,
 				027648E224AFCFEF006D7DE0 /* SceneDelegate.swift */,
-				027648E424AFCFEF006D7DE0 /* IntroViewController.swift */,
 				02873C5024CE324C00A59797 /* SSViewController.swift */,
 				02D2C69124D4EFCA00805AEA /* SSPageViewController.swift */,
 				0276494424CBA188006D7DE0 /* ColorViewController.swift */,
@@ -366,6 +369,7 @@
 				027648EA24AFCFEF006D7DE0 /* Main.storyboard in Resources */,
 				02873C5324CF03BB00A59797 /* fonts in Resources */,
 				02873C4924CDEA6400A59797 /* newhomeicon.png in Resources */,
+				027E207524E31182006ED08C /* fullsizeblizzard.mp4 in Resources */,
 				0276493D24CB4814006D7DE0 /* color.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,10 +498,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				027E207324E308C8006ED08C /* BGSelectionViewController.swift in Sources */,
 				0276491324BBA212006D7DE0 /* FlowerViewController.swift in Sources */,
 				0276494124CB7CC0006D7DE0 /* HexViewController.swift in Sources */,
 				0243A90A24D631F0001F1A69 /* BasicInfoViewController.swift in Sources */,
-				027648E524AFCFEF006D7DE0 /* IntroViewController.swift in Sources */,
 				02873C9124CFAA1E00A59797 /* NewFlowerViewController.swift in Sources */,
 				027648E124AFCFEF006D7DE0 /* AppDelegate.swift in Sources */,
 				0243A90C24D632B8001F1A69 /* AboutViewController.swift in Sources */,

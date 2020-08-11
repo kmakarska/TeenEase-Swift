@@ -30,7 +30,7 @@ setupAnimation()
     private func setupAnimation() {
         animationView.animation = Animation.named("realflower")
         animationView.frame = view.bounds
-        animationView.frame = CGRect(x: -5, y: 200, width: 400,height:400)
+        animationView.frame = CGRect(x: (view.frame.size.width - 420) , y: 200, width: 400,height:400)
  //       animationView.backgroundColor = .white
         animationView.contentMode = .scaleAspectFit
 //        animationView.loopMode = .autoReverse

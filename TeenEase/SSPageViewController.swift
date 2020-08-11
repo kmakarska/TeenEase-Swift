@@ -83,7 +83,8 @@ class SSPageViewController: UIViewController {
               self.playerLooper = AVPlayerLooper(player: queuePlayer, templateItem: playerItem)
 
               let layer = AVPlayerLayer(player: queuePlayer)
-              layer.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 898)
+//              layer.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 898)
+        layer.frame = CGRect(x: 0, y: -50, width: UIScreen.main.bounds.width, height: 898)
               view.layer.addSublayer(layer)
               
               self.queuePlayer.play()

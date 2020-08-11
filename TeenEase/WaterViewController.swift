@@ -24,7 +24,8 @@ class WaterViewController: UIViewController {
             private func setupAnimation() {
                 animationView.animation = Animation.named("water2")
                 animationView.frame = view.bounds
-                animationView.frame = CGRect(x: 30, y: 250, width: 350,height:350)
+     //           animationView.frame = CGRect(x: 30, y: 250, width: 350,height:350)
+                animationView.frame = CGRect(x: (view.frame.size.width - 370) , y: 250, width: 350,height:350)
          //       animationView.backgroundColor = .white
                 animationView.contentMode = .scaleAspectFit
         //        animationView.loopMode = .autoReverse
