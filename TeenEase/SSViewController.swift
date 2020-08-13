@@ -39,7 +39,7 @@ class SSViewController: UIViewController {
 
     
    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-       var vc = segue.destination as? SSPageViewController
+    var vc = segue.destination as? SSPageViewController
     vc?.finalText = self.ssText
     vc?.finalscenery = self.sceneryText
     vc?.finalsounds = self.soundsText
