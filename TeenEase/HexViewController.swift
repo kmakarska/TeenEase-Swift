@@ -19,7 +19,7 @@ class HexViewController: UIViewController {
 
         super.viewDidLoad()
 setupAnimation()
-       hextext1.text = "Breathe In"
+     //  hextext1.text = "Breathe In"
         // Do any additional setup after loading the view.
     }
     
@@ -32,25 +32,27 @@ setupAnimation()
           animationView.contentMode = .scaleAspectFit
 //          animationView.loopMode = .autoReverse
          animationView.play(completion: { (finished) in
-                  self.hextext1.text = "Breathe Out"
+            //      self.hextext1.text = "Breathe Out"
                   self.animationView.play(completion: { (finished) in
                       self.animationView.play(completion: { (finished) in
                           self.animationView.play(completion: { (finished) in
                               self.animationView.play()
                               self.animationView.loopMode = .autoReverse
-                            self.animationView.animationSpeed = 0.25
+                              self.animationView.animationSpeed = 0.25
                               self.hextext1.text = ""
                           })
                         self.animationView.animationSpeed = -0.25
-                          self.hextext1.text = "Breathe Out"
+                 //         self.hextext1.text = "Breathe Out"
                       })
                     self.animationView.animationSpeed = 0.25
-                      self.hextext1.text = "Breathe In"
+                //      self.hextext1.text = "Breathe In"
                   })
             self.animationView.animationSpeed = -0.25
               
           })
-          view.addSubview(animationView)
+          //view.addSubview(animationView)
+        view.insertSubview(animationView, at: 1)
+        
       }
     
 
