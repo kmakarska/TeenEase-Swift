@@ -43,11 +43,21 @@
                                         <color key="textColor" red="0.1025752798" green="0.0086635854100000007" blue="0.23974809050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In this activity, you can inhale and exhale along with the animation of your choice" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="FDu-kt-6d8">
+                                        <rect key="frame" x="88" y="123" width="239" height="66"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.1025752798" green="0.0086635854100000007" blue="0.23974809050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.71764705880000002" green="0.82352941180000006" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="FDu-kt-6d8" firstAttribute="width" secondItem="FGH-lE-rSD" secondAttribute="width" multiplier="0.577295" id="6Az-B5-MyV"/>
+                                    <constraint firstItem="FDu-kt-6d8" firstAttribute="height" secondItem="FGH-lE-rSD" secondAttribute="height" multiplier="0.247191" id="9aY-if-2v1"/>
                                     <constraint firstItem="8K9-nD-fan" firstAttribute="centerY" secondItem="FGH-lE-rSD" secondAttribute="centerY" multiplier="0.48" id="9h0-EM-2nx"/>
+                                    <constraint firstItem="FDu-kt-6d8" firstAttribute="centerX" secondItem="FGH-lE-rSD" secondAttribute="centerX" id="Fow-Sw-vSc"/>
                                     <constraint firstItem="8K9-nD-fan" firstAttribute="height" secondItem="FGH-lE-rSD" secondAttribute="height" multiplier="0.322097" id="Nl7-4Y-n4O"/>
+                                    <constraint firstItem="FDu-kt-6d8" firstAttribute="centerY" secondItem="FGH-lE-rSD" secondAttribute="centerY" constant="22.5" id="Z3N-YI-PgW"/>
                                     <constraint firstItem="8K9-nD-fan" firstAttribute="centerX" secondItem="FGH-lE-rSD" secondAttribute="centerX" id="oE2-su-oEc"/>
                                     <constraint firstItem="8K9-nD-fan" firstAttribute="width" secondItem="FGH-lE-rSD" secondAttribute="width" multiplier="0.640097" id="w8i-Ju-jhM"/>
                                 </constraints>
@@ -824,12 +834,12 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fUk-pZ-FM9">
-                                <rect key="frame" x="62" y="357" width="280" height="2"/>
+                                <rect key="frame" x="62" y="356" width="280" height="2"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99607843139999996" green="0.98823529409999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Yk-bZ-196">
-                                <rect key="frame" x="62" y="452" width="280" height="2"/>
+                                <rect key="frame" x="62" y="450" width="280" height="2"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99607843139999996" green="0.98823529409999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
