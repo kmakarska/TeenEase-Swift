@@ -22,7 +22,7 @@ class BasicInfoViewController: UIViewController {
     @IBOutlet weak var firstNameInput: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        navigationController?.interactivePopGestureRecognizer?.isEnabled = false
 
 
         // Do any additional setup after loading the view.
