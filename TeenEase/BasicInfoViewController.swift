@@ -23,8 +23,12 @@ class BasicInfoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.interactivePopGestureRecognizer?.isEnabled = false
-
-
+        
+        let defaults = UserDefaults.standard
+        firstNameInput.text = defaults.string(forKey: "firstname")
+        countryInput.text = defaults.string(forKey: "country")
+        ageInput.text = defaults.string(forKey: "age")
+        
         // Do any additional setup after loading the view.
     }
     

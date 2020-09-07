@@ -30,5 +30,26 @@ class ReadyViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBAction func NextScreen(_ sender: Any) {
+        
+        let defaults = UserDefaults.standard
+        let firstName = defaults.string(forKey: "firstname")
+        let country = defaults.string(forKey: "country")
+        let age = defaults.string(forKey: "age")
+        
+        if (firstName == nil || firstName!.isEmpty ||
+            country == nil || country!.isEmpty ||
+            age == nil || age!.isEmpty)
+        {
+            self.performSegue(withIdentifier: "readyToBasicInfo", sender: self)
+        }
+        else
+        {
+            self.performSegue(withIdentifier: "readytotab", sender: self)
+        }
+       
+       
+        
+    }
+    
 }

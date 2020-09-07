@@ -26,14 +26,11 @@ class AboutViewController: UIViewController {
 
     
    override func viewDidLoad() {
-          super.viewDidLoad()
-          let defaults = UserDefaults.standard
-    
-    name.text = defaults.string(forKey: "firstname")
-    
-    country.text = defaults.string(forKey: "country")
-    
-    age.text = defaults.string(forKey: "age")
+      super.viewDidLoad()
+        let defaults = UserDefaults.standard
+        name.text = defaults.string(forKey: "firstname")
+        country.text = defaults.string(forKey: "country")
+        age.text = defaults.string(forKey: "age")
     
         // Do any additional setup after loading the view.
     }
