@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BasicInfoViewController: UIViewController {
+class BasicInfoViewController: UIViewController, UITextFieldDelegate {
 
     @IBAction func saveBIButton(_ sender: Any) {
         let defaults = UserDefaults.standard
@@ -29,10 +29,19 @@ class BasicInfoViewController: UIViewController {
         countryInput.text = defaults.string(forKey: "country")
         ageInput.text = defaults.string(forKey: "age")
         
+        self.firstNameInput.delegate = self
+        self.countryInput.delegate = self
+        self.ageInput.delegate = self
+        
+        
         // Do any additional setup after loading the view.
     }
     
-
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
     /*
     // MARK: - Navigation
 

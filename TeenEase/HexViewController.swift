@@ -50,8 +50,8 @@ setupAnimation()
             self.animationView.animationSpeed = -0.25
               
           })
-          //view.addSubview(animationView)
-        view.insertSubview(animationView, at: 1)
+          view.addSubview(animationView)
+        //view.insertSubview(animationView, at: 1)
         
       }
     

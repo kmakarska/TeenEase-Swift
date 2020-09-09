@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AboutViewController: UIViewController {
+class AboutViewController: UIViewController, UITextFieldDelegate {
 
 
     @IBAction func saveAboutButton(_ sender: Any) {
@@ -32,10 +32,17 @@ class AboutViewController: UIViewController {
         country.text = defaults.string(forKey: "country")
         age.text = defaults.string(forKey: "age")
     
+    
+    self.name.delegate = self
+    self.country.delegate = self
+    self.age.delegate = self
         // Do any additional setup after loading the view.
     }
     
-
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
     /*
     // MARK: - Navigation
 
