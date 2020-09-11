@@ -383,7 +383,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8DV-n5-GWZ">
-                                        <rect key="frame" x="107" y="31" width="200" height="72"/>
+                                        <rect key="frame" x="107" y="52" width="200" height="72"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="NotoSansJP-Regular" family="Noto Sans JP" pointSize="30"/>
                                         <color key="textColor" red="0.1025752798" green="0.0086635854100000007" blue="0.23974809050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1251,10 +1251,11 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="eLR-MD-M5w"/>
         <segue reference="Ggd-Jg-Pw0"/>
         <segue reference="WLv-9g-Cjp"/>
         <segue reference="hwn-nd-m1q"/>
-        <segue reference="dHC-jy-KWo"/>
+        <segue reference="D9c-cW-YKE"/>
         <segue reference="QUT-aV-MET"/>
     </inferredMetricsTieBreakers>
     <resources>

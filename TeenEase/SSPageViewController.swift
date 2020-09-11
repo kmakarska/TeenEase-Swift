@@ -12,6 +12,13 @@ import AVKit
 
 class SSPageViewController: UIViewController {
     
+    var hasHomeButton: Bool {
+        if #available(iOS 11.0, *), let keyWindow = UIApplication.shared.windows.filter ({$0.isKeyWindow}).first, keyWindow.safeAreaInsets.bottom > 0 {
+            return true
+        }
+        return false
+    }
+    
     var queuePlayer: AVQueuePlayer!
     var playerLooper: AVPlayerLooper!
     
@@ -74,21 +81,31 @@ class SSPageViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        let path = Bundle.main.path(forResource: sceneryselect, ofType: "mp4")!
-              let url = URL(fileURLWithPath: path)
-              let asset = AVAsset(url: url)
-              let playerItem = AVPlayerItem(asset: asset)
-              
-              self.queuePlayer = AVQueuePlayer(playerItem: playerItem)
-              self.playerLooper = AVPlayerLooper(player: queuePlayer, templateItem: playerItem)
+      let path = Bundle.main.path(forResource: sceneryselect, ofType: "mp4")!
+      let url = URL(fileURLWithPath: path)
+      let asset = AVAsset(url: url)
+      let playerItem = AVPlayerItem(asset: asset)
+      
+      self.queuePlayer = AVQueuePlayer(playerItem: playerItem)
+      self.playerLooper = AVPlayerLooper(player: queuePlayer, templateItem: playerItem)
 
-              let layer = AVPlayerLayer(player: queuePlayer)
-              layer.frame = CGRect(x: 0, y: -2, width: UIScreen.main.bounds.width, height: 900)
-       //     layer.frame = CGRect(x: 0, y: -50, width: UIScreen.main.bounds.width, height: 898)
+      let layer = AVPlayerLayer(player: queuePlayer)
+   
+     
+      
+        if hasHomeButton
+        {
+            layer.frame = CGRect(x: 0, y: +32, width: UIScreen.main.bounds.width, height: 898)
+        }
+        else
+        {
+           layer.frame = CGRect(x: 0, y: -50, width: UIScreen.main.bounds.width, height: 898)
+        }
+ 
         
-              view.layer.addSublayer(layer)
-              
-              self.queuePlayer.play()
+       view.layer.addSublayer(layer)
+      
+       self.queuePlayer.play()
 
 //        let player = AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "rain", ofType: "mp4")!))
 //        let layer = AVPlayerLayer(player: player)
@@ -98,5 +115,6 @@ class SSPageViewController: UIViewController {
 //        view.layer.addSublayer(layer)
 //            player.play()
     }
-
+      
 }
+

@@ -10,7 +10,7 @@
 import UIKit
 import DropDown
 
-class SSViewController: UIViewController {
+class SSViewController: UIViewController, UITextFieldDelegate {
     let dropDownScenery = DropDown()
     let dropDownSounds = DropDown()
     
@@ -78,8 +78,14 @@ class SSViewController: UIViewController {
                 self.soundsText = item
             }
 
+        self.textfield.delegate = self
+        
         }
 
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+          textField.resignFirstResponder()
+          return true
+      }
 
     /*
     // MARK: - Navigation
