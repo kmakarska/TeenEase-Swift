@@ -10,7 +10,7 @@
 import UIKit
 import DropDown
 
-class SSViewController: UIViewController {
+class SSViewController: UIViewController, UITextFieldDelegate {
     let dropDownScenery = DropDown()
     let dropDownSounds = DropDown()
     
@@ -49,6 +49,7 @@ class SSViewController: UIViewController {
     override func viewDidLoad() {
             super.viewDidLoad()
         
+       
             DropDown.appearance().backgroundColor = UIColor.lightGray
             DropDown.appearance().selectionBackgroundColor = UIColor.systemIndigo
             DropDown.appearance().textColor = UIColor.white
@@ -77,8 +78,15 @@ class SSViewController: UIViewController {
                 self.soundsButton.setTitle("Sounds: \(item)", for: .normal)
                 self.soundsText = item
             }
+        
+        self.textfield.delegate = self
 
         }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+           textField.resignFirstResponder()
+           return true
+       }
 
 
     /*

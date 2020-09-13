@@ -41,6 +41,7 @@
 		02873C9124CFAA1E00A59797 /* NewFlowerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02873C9024CFAA1E00A59797 /* NewFlowerViewController.swift */; };
 		02B9D58B24E03E0B003AF170 /* crashingwaves.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 02B9D58A24E03E0B003AF170 /* crashingwaves.mp3 */; };
 		02D2C69224D4EFCA00805AEA /* SSPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D2C69124D4EFCA00805AEA /* SSPageViewController.swift */; };
+		17BEA3D1250D2DB100F98C31 /* ResourcesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BEA3D0250D2DB100F98C31 /* ResourcesViewController.swift */; };
 		694039585A65B38FCCB63C14 /* Pods_TeenEase_TeenEaseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E9F6A20AA49CF0F06D501DB /* Pods_TeenEase_TeenEaseUITests.framework */; };
 		B39A3DB9F6F10B13170F4B3C /* Pods_TeenEaseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7B5FA480256FDFF991F877B /* Pods_TeenEaseTests.framework */; };
 		B990883F08510E90636E4777 /* Pods_TeenEase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D6257036DB74AF8651A7185 /* Pods_TeenEase.framework */; };
@@ -104,6 +105,7 @@
 		02873C9024CFAA1E00A59797 /* NewFlowerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFlowerViewController.swift; sourceTree = "<group>"; };
 		02B9D58A24E03E0B003AF170 /* crashingwaves.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = crashingwaves.mp3; sourceTree = "<group>"; };
 		02D2C69124D4EFCA00805AEA /* SSPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSPageViewController.swift; sourceTree = "<group>"; };
+		17BEA3D0250D2DB100F98C31 /* ResourcesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesViewController.swift; sourceTree = "<group>"; };
 		2E9F6A20AA49CF0F06D501DB /* Pods_TeenEase_TeenEaseUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeenEase_TeenEaseUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		48221A145C7E58C41E30D163 /* Pods-TeenEase-TeenEaseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeenEase-TeenEaseUITests.release.xcconfig"; path = "Target Support Files/Pods-TeenEase-TeenEaseUITests/Pods-TeenEase-TeenEaseUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4D6257036DB74AF8651A7185 /* Pods_TeenEase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeenEase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -197,6 +199,7 @@
 				0276494624CBA3E4006D7DE0 /* WaterViewController.swift */,
 				02873C9024CFAA1E00A59797 /* NewFlowerViewController.swift */,
 				0276494024CB7CC0006D7DE0 /* HexViewController.swift */,
+				17BEA3D0250D2DB100F98C31 /* ResourcesViewController.swift */,
 				027648E824AFCFEF006D7DE0 /* Main.storyboard */,
 				027648EB24AFCFEF006D7DE0 /* Assets.xcassets */,
 				027648ED24AFCFEF006D7DE0 /* LaunchScreen.storyboard */,
@@ -501,6 +504,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17BEA3D1250D2DB100F98C31 /* ResourcesViewController.swift in Sources */,
 				027E207324E308C8006ED08C /* BGSelectionViewController.swift in Sources */,
 				0276491324BBA212006D7DE0 /* FlowerViewController.swift in Sources */,
 				024E2D762506919A000C0487 /* ReadyViewController.swift in Sources */,
